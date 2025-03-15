@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reannon Gray - Web Developer specializing in responsive, accessible web applications with React, JavaScript, and modern web technologies. View my portfolio and get in touch for your next project.">
+  <meta name="keywords" content="web developer, front-end developer, React developer, JavaScript, web accessibility, UI/UX, portfolio, Reannon Gray, hire developer">
+  <title>Reannon Gray | Web Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Main navigation -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <span class="nav-logo">Reannon Gray</span>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/ResumeReannonGray.pdf" download class="resume-btn">
+          <i class="fas fa-file-alt"></i> Resume
+        </a>
+      </div>
+      <div class="mobile-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Loading screen -->
+  <div class="loading-screen">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="animate-on-scroll">Reannon Gray</h1>
+        <p class="hero-description animate-on-scroll">Creating engaging web experiences with React, JavaScript, and modern web technologies</p>
+        <div class="cta-buttons animate-on-scroll">
+          <a href="#projects" class="btn primary magnetic">
+            <i class="fas fa-code"></i> View Projects
+          </a>
+          <a href="#contact" class="btn secondary magnetic">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">About Me</h2>
+      <div class="about-content animate-on-scroll">
+        <div class="about-image">
+          <!-- Replace with your placeholder image -->
+          <img src="assets/images/avatar.png" alt="Reannon Gray">
+        </div>
+        <div class="about-text">
+          <p><span class="text-accent">As a mom of four</span>, I've developed a strong appreciation for structure, adaptability, and accessibility—qualities that also shape my approach to web development. My background allows me to see design through a unique lens, ensuring that the websites I create are not only visually appealing but also intuitive and inclusive for all users.</p>
+          
+          <p>I believe accessibility should never come at the cost of great design. Every website I build is crafted with usability in mind, ensuring seamless navigation, clean aesthetics, and a smooth experience across all devices. Whether it's a personal portfolio, a business site, or a complex web app, my goal is to create digital spaces that feel natural, engaging, and open to everyone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills section -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category animate-on-scroll">
+          <div class="skill-header">
+            <i class="fas fa-code"></i>
+            <h3>Frontend Development</h3>
+          </div>
+          <div class="skill-tags" id="frontend-skills">
+            <!-- Skills populated by JavaScript -->
+          </div>
+        </div>
+
+        <div class="skill-category animate-on-scroll">
+          <div class="skill-header">
+            <i class="fas fa-tools"></i>
+            <h3>Software Engineering & Tools</h3>
+          </div>
+          <div class="skill-tags" id="software-skills">
+            <!-- Skills populated by JavaScript -->
+          </div>
+        </div>
+
+        <div class="skill-category animate-on-scroll">
+          <div class="skill-header">
+            <i class="fas fa-chart-bar"></i>
+            <h3>Data Analysis & Systems</h3>
+          </div>
+          <div class="skill-tags" id="data-skills">
+            <!-- Skills populated by JavaScript -->
+          </div>
+        </div>
+
+        <div class="skill-category animate-on-scroll">
+          <div class="skill-header">
+            <i class="fas fa-users-cog"></i>
+            <h3>Professional Skills</h3>
+          </div>
+          <div class="skill-tags" id="professional-skills">
+            <!-- Skills populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects section -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Featured Projects</h2>
+      <div class="projects-grid">
+        <!-- Moodscapes Project -->
+        <div class="project-card animate-on-scroll" data-tilt>
+          <div class="project-icon">
+            <i class="fas fa-music project-fa-icon"></i>
+          </div>
+          <div class="project-content">
+            <h3>Moodscapes</h3>
+            <p>A generative mood-based audio player web application</p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Web Audio API</span>
+              <span>GSAP</span>
+            </div>
+            <ul class="project-features">
+              <li>Dynamic audio generation based on user mood input</li>
+              <li>Interactive visualization using GSAP animations</li>
+              <li>Responsive design with intuitive UI</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://moodscapes.reannoncodes.site" target="_blank" rel="noopener noreferrer" class="project-btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+                <div class="btn-glow"></div>
+              </a>
+              <a href="https://github.com/reannongray/moodscapes" target="_blank" rel="noopener noreferrer" class="project-btn">
+                <i class="fab fa-github"></i> View Code
+                <div class="btn-glow"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Space Explorer Project -->
+        <div class="project-card animate-on-scroll" data-tilt>
+          <div class="project-icon">
+            <i class="fas fa-rocket project-fa-icon"></i>
+          </div>
+          <div class="project-content">
+            <h3>Space Explorer</h3>
+            <p>Interactive space exploration web application with 3D visualization</p>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>Three.js</span>
+              <span>NASA API</span>
+            </div>
+            <ul class="project-features">
+              <li>Interactive 3D planet visualization using Three.js</li>
+              <li>Real-time planetary data from NASA API</li>
+              <li>Advanced raycasting for precise object interaction</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://space.reannoncodes.site" target="_blank" rel="noopener noreferrer" class="project-btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+                <div class="btn-glow"></div>
+              </a>
+              <a href="https://github.com/reannongray/space-explorer" target="_blank" rel="noopener noreferrer" class="project-btn">
+                <i class="fab fa-github"></i> View Code
+                <div class="btn-glow"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Weather App Project -->
+        <div class="project-card animate-on-scroll" data-tilt>
+          <div class="project-icon">
+            <i class="fas fa-cloud-sun project-fa-icon"></i>
+          </div>
+          <div class="project-content">
+            <h3>Weather App</h3>
+            <p>Weather forecast application with real-time updates</p>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>Weather API</span>
+              <span>CSS</span>
+            </div>
+            <ul class="project-features">
+              <li>Current and 5-day weather forecasts</li>
+              <li>Geolocation for automatic location detection</li>
+              <li>Clean, intuitive interface</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://highlownopressure.reannoncodes.site/src/index.html" target="_blank" rel="noopener noreferrer" class="project-btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+                <div class="btn-glow"></div>
+              </a>
+              <a href="https://github.com/reannongray/weather-app" target="_blank" rel="noopener noreferrer" class="project-btn">
+                <i class="fab fa-github"></i> View Code
+                <div class="btn-glow"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Task Attack Project -->
+        <div class="project-card animate-on-scroll" data-tilt>
+          <div class="project-icon">
+            <i class="fas fa-tasks project-fa-icon"></i>
+          </div>
+          <div class="project-content">
+            <h3>Task Attack</h3>
+            <p>A beautifully themed task management application</p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>TailwindCSS</span>
+              <span>Weather API</span>
+            </div>
+            <ul class="project-features">
+              <li>Multiple visual themes (Ocean, Forest, Sunset, etc.)</li>
+              <li>Calendar integration with task timeline</li>
+              <li>Weather data integration with task recommendations</li>
+              <li>Task prioritization and organization features</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://taskattack.reannoncodes.site/" target="_blank" rel="noopener noreferrer" class="project-btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+                <div class="btn-glow"></div>
+              </a>
+              <a href="https://github.com/reannongray/task-attack" target="_blank" rel="noopener noreferrer" class="project-btn">
+                <i class="fab fa-github"></i> View Code
+                <div class="btn-glow"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience section -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Work Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>VA Technical Help Desk Support</h3>
+            <span class="company">GDIT</span>
+            <span class="date">2023 - Present</span>
+            <ul>
+              <li>Reduced software and hardware issue resolution time by 30% for VA employees</li>
+              <li>Ensured system downtime decreased by 20% through efficient troubleshooting</li>
+              <li>Improved service resolution rate by 17% documenting and resolving issues</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Team Member</h3>
+            <span class="company">Tractor Supply</span>
+            <span class="date">2021 - 2023</span>
+            <ul>
+              <li>Boosted customer satisfaction by 28% with personalized recommendations</li>
+              <li>Handled customer interactions managing registers and floor assistance</li>
+              <li>Enhanced operational efficiency by 32% in truck team operations</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Office Manager</h3>
+            <span class="company">K&P Auto</span>
+            <span class="date">2016 - 2021</span>
+            <ul>
+              <li>Enhanced office efficiency by 38% optimizing operational workflows</li>
+              <li>Boosted customer satisfaction by 25% with conflict resolution strategies</li>
+              <li>Increased data accuracy by 56% implementing record-keeping practices</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education section -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Education</h2>
+      <div class="education-grid">
+        <div class="education-card animate-on-scroll">
+          <h3>Master of Applied Behavior Analysis</h3>
+          <span class="school">Eastern Kentucky University</span>
+          <span class="date">2024 - Present, Richmond, KY</span>
+        </div>
+        
+        <div class="education-card animate-on-scroll">
+          <h3>Bachelor of Science in Criminal Justice</h3>
+          <span class="school">Eastern Kentucky University</span>
+          <span class="date">2005 - 2010, Richmond, KY</span>
+          <p>Graduated with a 3.8 GPA</p>
+        </div>
+        
+        <div class="education-card animate-on-scroll">
+          <h3>Certificate in Web Development</h3>
+          <span class="school">CodeYou</span>
+          <span class="date">2024, Louisville, KY</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-container animate-on-scroll">
+        <div class="cta-content">
+          <h2>Ready to bring your web project to life?</h2>
+          <p>I'm currently available for freelance projects and job opportunities. Let's discuss how my skills can help you achieve your goals.</p>
+          <div class="cta-section-buttons">
+            <a href="#contact" class="cta-primary-btn">
+              <i class="fas fa-paper-plane"></i> Get in Touch
+            </a>
+            <a href="assets/ResumeReannonGray.pdf" download class="cta-secondary-btn">
+              <i class="fas fa-file-download"></i> Download Resume
+            </a>
+          </div>
+        </div>
+        <div class="cta-status">
+          <div class="status-pulse"></div>
+          <span>Available for Work</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Contact Me</h2>
+      <div class="contact-grid">
+        <div class="contact-info animate-on-scroll">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:reannongray@gmail.com">reannongray@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope-open"></i>
+            <a href="mailto:reannoncodes@reannoncodes.site">reannoncodes@reannoncodes.site</a>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-globe"></i>
+            <a href="https://reannoncodes.site" target="_blank" rel="noopener noreferrer">reannoncodes.site</a>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/reannon-gray-257337269/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/reannongray" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-file-pdf"></i>
+            <a href="assets/ResumeReannonGray.pdf" download>Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Reannon Gray. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Custom cursor elements -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
