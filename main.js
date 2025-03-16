@@ -232,7 +232,7 @@ class ParticleSystem {
     }, 1500);
   }
   
-  // Custom cursor functionality from CodePen
+  // Custom cursor functionality - basic version that should work
   function initializeCustomCursor() {
     const cursor = document.querySelector('.cursor');
     const follower = document.querySelector('.cursor-follower');
@@ -374,7 +374,7 @@ class ParticleSystem {
     }
   }
   
-  // Magnetic button effect
+  // Magnetic button effect with cursor interaction
   function initializeMagneticButtons() {
     const magneticElements = document.querySelectorAll('.magnetic');
     const follower = document.querySelector('.cursor-follower');
@@ -386,12 +386,20 @@ class ParticleSystem {
         const y = e.clientY - rect.top - rect.height / 2;
         
         element.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
-        if (follower) follower.style.transform = 'scale(1.5)';
+        
+        // Apply scale effect to cursor follower if it exists
+        if (follower) {
+          follower.style.transform = 'scale(1.5)';
+        }
       });
   
       element.addEventListener('mouseleave', () => {
         element.style.transform = 'translate(0px, 0px)';
-        if (follower) follower.style.transform = 'scale(1)';
+        
+        // Reset cursor follower if it exists
+        if (follower) {
+          follower.style.transform = 'scale(1)';
+        }
       });
     });
   }
