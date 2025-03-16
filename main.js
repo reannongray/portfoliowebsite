@@ -232,7 +232,7 @@ class ParticleSystem {
     }, 1500);
   }
   
-  // Custom cursor functionality
+  // Custom cursor functionality from CodePen
   function initializeCustomCursor() {
     const cursor = document.querySelector('.cursor');
     const follower = document.querySelector('.cursor-follower');
