@@ -12,26 +12,27 @@
 </head>
 <body>
   <!-- Main navigation -->
-  <div class="nav-content">
-    <span class="nav-logo">Reannon Gray</span>
-    <div class="nav-links">
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-      <a href="assets/ResumeReannonGray.pdf" download class="resume-btn">
-        <i class="fas fa-file-alt"></i> Resume
-      </a>
+  <nav class="navbar">
+    <div class="nav-content">
+      <span class="nav-logo">Reannon Gray</span>
+      <div class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/ResumeReannonGray.pdf" download class="resume-btn">
+          <i class="fas fa-file-alt"></i> Resume
+        </a>
+      </div>
+      <div class="mobile-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-    <div class="mobile-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
-</nav>
+  </nav>
 
   <!-- Loading screen -->
   <div class="loading-screen">
@@ -62,7 +63,6 @@
       <h2 class="section-title animate-on-scroll">About Me</h2>
       <div class="about-content animate-on-scroll">
         <div class="about-image">
-          <!-- Replace with your placeholder image -->
           <img src="assets/images/avatar.png" alt="Reannon Gray">
         </div>
         <div class="about-text">
@@ -122,134 +122,185 @@
     </div>
   </section>
 
-  <!-- Projects section -->
+  <!-- Projects section with CAROUSEL -->
   <section id="projects" class="section projects-section">
     <div class="container">
       <h2 class="section-title animate-on-scroll">Featured Projects</h2>
-      <div class="projects-grid">
-        <!-- Moodscapes Project -->
-        <div class="project-card animate-on-scroll" data-tilt>
-          <div class="project-icon">
-            <i class="fas fa-music project-fa-icon"></i>
-          </div>
-          <div class="project-content">
-            <h3>Moodscapes</h3>
-            <p>A generative mood-based audio player web application</p>
-            <div class="project-tech">
-              <span>React</span>
-              <span>Web Audio API</span>
-              <span>GSAP</span>
+      
+      <div class="projects-carousel-wrapper">
+        <!-- Navigation Arrows -->
+        <button class="carousel-nav prev" id="prevBtn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-nav next" id="nextBtn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <div class="projects-carousel">
+          <div class="projects-track" id="projectsTrack">
+            
+            <!-- Moodscapes Project -->
+            <div class="project-card animate-on-scroll" data-tilt>
+              <div class="project-icon">
+                <i class="fas fa-music project-fa-icon"></i>
+              </div>
+              <div class="project-content">
+                <h3>Moodscapes</h3>
+                <p>A generative mood-based audio player web application</p>
+                <div class="project-tech">
+                  <span>React</span>
+                  <span>Web Audio API</span>
+                  <span>GSAP</span>
+                </div>
+                <ul class="project-features">
+                  <li>Dynamic audio generation based on user mood input</li>
+                  <li>Interactive visualization using GSAP animations</li>
+                  <li>Responsive design with intuitive UI</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://moodscapes.reannoncodes.site" target="_blank" rel="noopener noreferrer" class="project-btn">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                    <div class="btn-glow"></div>
+                  </a>
+                  <a href="https://github.com/reannongray/moodscapesupdated" target="_blank" rel="noopener noreferrer" class="project-btn">
+                    <i class="fab fa-github"></i> View Code
+                    <div class="btn-glow"></div>
+                  </a>
+                </div>
+              </div>
             </div>
-            <ul class="project-features">
-              <li>Dynamic audio generation based on user mood input</li>
-              <li>Interactive visualization using GSAP animations</li>
-              <li>Responsive design with intuitive UI</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://moodscapes.reannoncodes.site" target="_blank" rel="noopener noreferrer" class="project-btn">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-                <div class="btn-glow"></div>
-              </a>
-              <a href="https://github.com/reannongray/moodscapesupdated" target="_blank" rel="noopener noreferrer" class="project-btn">
-                <i class="fab fa-github"></i> View Code
-                <div class="btn-glow"></div>
-              </a>
+
+            <!-- Space Explorer Project -->
+            <div class="project-card animate-on-scroll" data-tilt>
+              <div class="project-icon">
+                <i class="fas fa-rocket project-fa-icon"></i>
+              </div>
+              <div class="project-content">
+                <h3>Space Explorer</h3>
+                <p>Interactive space exploration web application with 3D visualization</p>
+                <div class="project-tech">
+                  <span>JavaScript</span>
+                  <span>Three.js</span>
+                  <span>NASA API</span>
+                </div>
+                <ul class="project-features">
+                  <li>Interactive 3D planet visualization using Three.js</li>
+                  <li>Real-time planetary data from NASA API</li>
+                  <li>Advanced raycasting for precise object interaction</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://space.reannoncodes.site" target="_blank" rel="noopener noreferrer" class="project-btn">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                    <div class="btn-glow"></div>
+                  </a>
+                  <a href="https://github.com/reannongray/SpaceExplorer" target="_blank" rel="noopener noreferrer" class="project-btn">
+                    <i class="fab fa-github"></i> View Code
+                    <div class="btn-glow"></div>
+                  </a>
+                </div>
+              </div>
             </div>
+
+            <!-- Weather App Project -->
+            <div class="project-card animate-on-scroll" data-tilt>
+              <div class="project-icon">
+                <i class="fas fa-cloud-sun project-fa-icon"></i>
+              </div>
+              <div class="project-content">
+                <h3>Weather App</h3>
+                <p>Weather forecast application with real-time updates</p>
+                <div class="project-tech">
+                  <span>JavaScript</span>
+                  <span>Weather API</span>
+                  <span>CSS</span>
+                </div>
+                <ul class="project-features">
+                  <li>Current and 5-day weather forecasts</li>
+                  <li>Geolocation for automatic location detection</li>
+                  <li>Clean, intuitive interface design</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://highlownopressure.reannoncodes.site/src/index.html" target="_blank" rel="noopener noreferrer" class="project-btn">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                    <div class="btn-glow"></div>
+                  </a>
+                  <a href="https://github.com/reannongray/highlownopressure" target="_blank" rel="noopener noreferrer" class="project-btn">
+                    <i class="fab fa-github"></i> View Code
+                    <div class="btn-glow"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Task Attack Project -->
+            <div class="project-card animate-on-scroll" data-tilt>
+              <div class="project-icon">
+                <i class="fas fa-tasks project-fa-icon"></i>
+              </div>
+              <div class="project-content">
+                <h3>Task Attack</h3>
+                <p>A beautifully themed task management application</p>
+                <div class="project-tech">
+                  <span>React</span>
+                  <span>TailwindCSS</span>
+                  <span>Weather API</span>
+                </div>
+                <ul class="project-features">
+                  <li>Multiple visual themes (Ocean, Forest, Sunset, etc.)</li>
+                  <li>Calendar integration with task timeline</li>
+                  <li>Weather data integration with task recommendations</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://taskattack.reannoncodes.site/" target="_blank" rel="noopener noreferrer" class="project-btn">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                    <div class="btn-glow"></div>
+                  </a>
+                  <a href="https://github.com/reannongray/taskattack" target="_blank" rel="noopener noreferrer" class="project-btn">
+                    <i class="fab fa-github"></i> View Code
+                    <div class="btn-glow"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- NextPlay Gaming Analytics Project -->
+            <div class="project-card animate-on-scroll" data-tilt>
+              <div class="project-icon">
+                <i class="fas fa-gamepad project-fa-icon"></i>
+              </div>
+              <div class="project-content">
+                <h3>NextPlay Analytics</h3>
+                <p>Gaming analytics platform with ML pricing insights</p>
+                <div class="project-tech">
+                  <span>Python</span>
+                  <span>Machine Learning</span>
+                  <span>Plotly</span>
+                  <span>Pandas</span>
+                </div>
+                <ul class="project-features">
+                  <li>Multi-platform pricing analysis with smart recommendations</li>
+                  <li>Advanced value scoring algorithms for optimal decisions</li>
+                  <li>AI-powered game recommendation engine with budget filtering</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://nextplay.reannoncodes.site" target="_blank" rel="noopener noreferrer" class="project-btn">
+                    <i class="fas fa-external-link-alt"></i> Live Demo
+                    <div class="btn-glow"></div>
+                  </a>
+                  <a href="https://github.com/reannongray/nextplay" target="_blank" rel="noopener noreferrer" class="project-btn">
+                    <i class="fab fa-github"></i> View Code
+                    <div class="btn-glow"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
-
-        <!-- Space Explorer Project -->
-        <div class="project-card animate-on-scroll" data-tilt>
-          <div class="project-icon">
-            <i class="fas fa-rocket project-fa-icon"></i>
-          </div>
-          <div class="project-content">
-            <h3>Space Explorer</h3>
-            <p>Interactive space exploration web application with 3D visualization</p>
-            <div class="project-tech">
-              <span>JavaScript</span>
-              <span>Three.js</span>
-              <span>NASA API</span>
-            </div>
-            <ul class="project-features">
-              <li>Interactive 3D planet visualization using Three.js</li>
-              <li>Real-time planetary data from NASA API</li>
-              <li>Advanced raycasting for precise object interaction</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://space.reannoncodes.site" target="_blank" rel="noopener noreferrer" class="project-btn">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-                <div class="btn-glow"></div>
-              </a>
-              <a href="https://github.com/reannongray/SpaceExplorer" target="_blank" rel="noopener noreferrer" class="project-btn">
-                <i class="fab fa-github"></i> View Code
-                <div class="btn-glow"></div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Weather App Project -->
-        <div class="project-card animate-on-scroll" data-tilt>
-          <div class="project-icon">
-            <i class="fas fa-cloud-sun project-fa-icon"></i>
-          </div>
-          <div class="project-content">
-            <h3>Weather App</h3>
-            <p>Weather forecast application with real-time updates</p>
-            <div class="project-tech">
-              <span>JavaScript</span>
-              <span>Weather API</span>
-              <span>CSS</span>
-            </div>
-            <ul class="project-features">
-              <li>Current and 5-day weather forecasts</li>
-              <li>Geolocation for automatic location detection</li>
-              <li>Clean, intuitive interface</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://highlownopressure.reannoncodes.site/src/index.html" target="_blank" rel="noopener noreferrer" class="project-btn">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-                <div class="btn-glow"></div>
-              </a>
-              <a href="https://github.com/reannongray/highlownopressure" target="_blank" rel="noopener noreferrer" class="project-btn">
-                <i class="fab fa-github"></i> View Code
-                <div class="btn-glow"></div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Task Attack Project -->
-        <div class="project-card animate-on-scroll" data-tilt>
-          <div class="project-icon">
-            <i class="fas fa-tasks project-fa-icon"></i>
-          </div>
-          <div class="project-content">
-            <h3>Task Attack</h3>
-            <p>A beautifully themed task management application</p>
-            <div class="project-tech">
-              <span>React</span>
-              <span>TailwindCSS</span>
-              <span>Weather API</span>
-            </div>
-            <ul class="project-features">
-              <li>Multiple visual themes (Ocean, Forest, Sunset, etc.)</li>
-              <li>Calendar integration with task timeline</li>
-              <li>Weather data integration with task recommendations</li>
-              <li>Task prioritization and organization features</li>
-            </ul>
-            <div class="project-links">
-              <a href="https://taskattack.reannoncodes.site/" target="_blank" rel="noopener noreferrer" class="project-btn">
-                <i class="fas fa-external-link-alt"></i> Live Demo
-                <div class="btn-glow"></div>
-              </a>
-              <a href="https://github.com/reannongray/taskattack" target="_blank" rel="noopener noreferrer" class="project-btn">
-                <i class="fab fa-github"></i> View Code
-                <div class="btn-glow"></div>
-              </a>
-            </div>
-          </div>
+        
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators" id="carouselIndicators">
+          <!-- Indicators will be generated by JavaScript -->
         </div>
       </div>
     </div>
@@ -293,7 +344,7 @@
           <div class="timeline-content">
             <h3>Office Manager</h3>
             <span class="company">K&P Auto</span>
-            <span class="date">2016 - 2021</span>
+            <span class="date">22016 - 2021</span>
             <ul>
               <li>Enhanced office efficiency by 38% optimizing operational workflows</li>
               <li>Boosted customer satisfaction by 25% with conflict resolution strategies</li>
